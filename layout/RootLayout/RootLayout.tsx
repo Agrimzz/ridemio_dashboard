@@ -9,7 +9,7 @@ import {
   createTheme,
   mantineHtmlProps,
 } from "@mantine/core";
-
+import "@mantine/charts/styles.css";
 import "@/app/globals.css";
 
 export const metadata = {
@@ -28,7 +28,7 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
       info: colorsTuple("#00A5FF"),
       textPrimary: colorsTuple("#2E2C34"),
       textSecondary: colorsTuple("#84818A"),
-      grayDark: colorsTuple("#D3D4D5"),
+      grayLight: colorsTuple("#D3D4D5"),
     },
     primaryColor: "primary",
   });
