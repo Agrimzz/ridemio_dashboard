@@ -1,0 +1,1 @@
+export { TripsLayout } from "./TripsLayout";

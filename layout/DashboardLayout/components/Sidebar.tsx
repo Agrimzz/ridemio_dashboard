@@ -50,7 +50,9 @@ export default function Sidebar() {
       >
         <Flex direction="column" gap="sm" w="100%" py="md">
           {navconfig.map(({ label, href, icon, children }) => {
-            const isActive = pathname === href;
+            const isActive =
+              pathname === href ||
+              (children && children.some((child) => pathname === child.href));
 
             return (
               <NavLink
